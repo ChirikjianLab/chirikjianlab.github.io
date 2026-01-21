@@ -141,4 +141,23 @@
 
 <p>For previous pubilication, please refer to <a target="_blank" rel="noopener" href="https://scholar.google.com/citations?hl=zh-CN&user=qoIuyMoAAAAJ">Dr. Chirikjian's Google Scholar</a></p>
 
-</article></div></main><div class="nav-wrap"><div class="nav"><button class="site-nav"><div class="navicon"></div></button><ul class="nav_items"><li class="nav_item"><a class="nav-page" href="/"> Home</a></li><li class="nav_item"><a class="nav-page" href="/research"> Research</a></li><li class="nav_item"><a class="nav-page" href="/publications"> Publications</a></li><li class="nav_item"><a class="nav-page" href="/people"> People</a></li><li class="nav_item"><a class="nav-page" href="/lab-news"> Lab News</a></li><li class="nav_item"><a class="nav-page" href="/contact-us"> Contact Us</a></li></ul></div><div class="cd-top"><i class="fa fa-arrow-up" aria-hidden="true"></i></div></div><footer id="page_footer"><div class="footer_wrap"><div class="copyright">&copy;2020 - 2022 by Gregory Scott Chirikjian</div><div class="theme-info">Powered by <a target="_blank" href="https://hexo.io" rel="nofollow noopener">Hexo</a> & <a target="_blank" href="https://github.com/PhosphorW/hexo-theme-academia" rel="nofollow noopener">Academia Theme</a></div></div></footer><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script></body></html>
+</article></div></main><div class="nav-wrap"><div class="nav"><button class="site-nav"><div class="navicon"></div></button><ul class="nav_items"><li class="nav_item"><a class="nav-page" href="/"> Home</a></li><li class="nav_item"><a class="nav-page" href="/research"> Research</a></li><li class="nav_item"><a class="nav-page" href="/publications"> Publications</a></li><li class="nav_item"><a class="nav-page" href="/people"> People</a></li><li class="nav_item"><a class="nav-page" href="/lab-news"> Lab News</a></li><li class="nav_item"><a class="nav-page" href="/contact-us"> Contact Us</a></li></ul></div><div class="cd-top"><i class="fa fa-arrow-up" aria-hidden="true"></i></div></div><footer id="page_footer"><div class="footer_wrap"><div class="copyright">&copy;2020 - 2022 by Gregory Scott Chirikjian</div><div class="theme-info">Powered by <a target="_blank" href="https://hexo.io" rel="nofollow noopener">Hexo</a> & <a target="_blank" href="https://github.com/PhosphorW/hexo-theme-academia" rel="nofollow noopener">Academia Theme</a></div></div></footer><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script>
+
+<script>
+window.addEventListener('load', function() {
+    var acknowledged = sessionStorage.getItem('publicationsAcknowledged');
+    
+    if (!acknowledged) {
+        var userConfirmed = confirm('Acknowledgement\n\nBy clicking "OK", I acknowledge that the contents (papers, articles, slides, etc) on this page are only allowed for personal use and prohibited from dissemination purposes.');
+        
+        if (userConfirmed) {
+            sessionStorage.setItem('publicationsAcknowledged', 'true');
+        } else {
+            // Redirect to home page if user clicks Cancel
+            window.location.href = '/';
+        }
+    }
+});
+</script>
+
+</body></html>
