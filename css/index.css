@@ -985,16 +985,67 @@ blockquote p {
 }
 
 /* ===== Research Topics Grid ===== */
-.toc-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 一行 4 个 */
-  gap: 14px 24px; /* 行距 | 列距 */
-  margin-top: 1.2rem;
+/* --- TOC layout --- */
+.toc {
+  margin: 18px 0 12px;
 }
 
-/* 每个 topic 的样式 */
+/* 头部：标题 +（移动端）折叠按钮 */
+.toc-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.toc h3 {
+  margin: 0;
+}
+
+/* 网格：桌面端默认展开，视觉更“满”但不拥挤 */
+.toc-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(160px, 1fr));
+  gap: 10px 12px;
+}
+
+/* block/标签样式：轻量、学术风、不花 */
 .toc-chip {
   display: block;
-  text-align: left;
-  white-space: nowrap;   /* 不允许长标题换行 */
+  padding: 10px 12px;
+  border: 1px solid rgba(0,0,0,0.12);
+  border-radius: 10px;
+  text-decoration: none;
+  line-height: 1.25;
+  background: #fff;
+}
+
+.toc-chip:hover {
+  border-color: rgba(0,0,0,0.25);
+  transform: translateY(-1px);
+}
+
+/* 移动端：网格变两列 + 默认折叠（节省空间） */
+.toc-toggle {
+  display: none; /* 桌面端隐藏 */
+  border: 1px solid rgba(0,0,0,0.15);
+  background: #fff;
+  padding: 6px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 820px) {
+  .toc-grid {
+    grid-template-columns: repeat(2, minmax(140px, 1fr));
+  }
+  .toc-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .toc-grid.is-collapsed {
+    display: none;
+  }
 }
