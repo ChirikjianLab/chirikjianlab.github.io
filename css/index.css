@@ -983,3 +983,18 @@ blockquote p {
 ::-webkit-scrollbar-thumb {
   background-color: rgba(122,130,136,0.4);
 }
+
+/* ===== Research Topics Grid ===== */
+.toc-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 一行 4 个 */
+  gap: 14px 24px; /* 行距 | 列距 */
+  margin-top: 1.2rem;
+}
+
+/* 每个 topic 的样式 */
+.toc-chip {
+  display: block;
+  text-align: left;
+  white-space: nowrap;   /* 不允许长标题换行 */
+}
