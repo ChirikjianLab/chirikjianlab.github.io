@@ -920,25 +920,24 @@
         </div>
     </footer>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" 
-            src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <!-- // core scripts -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script>
     <script src="/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script>
 
-    <script>
+    <script> // research topics button
     document.addEventListener('DOMContentLoaded', function () {
     const btn = document.querySelector('.toc-toggle');
     const grid = document.getElementById('toc-grid');
     if (!btn || !grid) return;
 
-    // 默认展开（全端一致）
     btn.textContent = 'Hide';
     btn.setAttribute('aria-expanded', 'true');
 
     btn.addEventListener('click', function (e) {
         e.preventDefault();
-        e.stopPropagation();   // ← 关键
+        e.stopPropagation();
 
         const collapsed = grid.classList.toggle('is-collapsed');
         btn.setAttribute('aria-expanded', String(!collapsed));
@@ -947,7 +946,7 @@
     });
     </script>
 
-    <script>
+    <script> // pop up window
         window.addEventListener('load', function() {
             var acknowledged = sessionStorage.getItem('publicationsAcknowledged');
             
