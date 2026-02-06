@@ -1009,6 +1009,9 @@ blockquote p {
   grid-template-columns: repeat(3, minmax(160px, 1fr));
   gap: 10px 12px;
 }
+.toc-grid.is-collapsed {
+  display: none;
+}
 
 /* block/标签样式：轻量、学术风、不花 */
 .toc-chip {
@@ -1046,8 +1049,5 @@ blockquote p {
     display: inline-flex;
     align-items: center;
     gap: 6px;
-  }
-  .toc-grid.is-collapsed {
-    display: none;
   }
 }
