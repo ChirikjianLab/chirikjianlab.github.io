@@ -1028,7 +1028,9 @@ blockquote p {
 
 /* 移动端：网格变两列 + 默认折叠（节省空间） */
 .toc-toggle {
-  display: none; /* 桌面端隐藏 */
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   border: 1px solid rgba(0,0,0,0.15);
   background: #fff;
   padding: 6px 10px;
