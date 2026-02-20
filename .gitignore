@@ -4,6 +4,7 @@ _site/
 # Ruby bundler
 .bundle/
 vendor/
+Gemfile.lock
 
 # IDE and editor files
 .vscode/
