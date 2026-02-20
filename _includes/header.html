@@ -1,0 +1,15 @@
+<header id="page_header">
+    <div class="header_wrap">
+        <div id="blog_name">
+            <a class="blog_title" id="site-name" href="/">{{ site.title }}</a>
+        </div>
+        <button class="menus_icon">
+            <div class="navicon"></div>
+        </button>
+        <ul class="menus_items">
+            {% for item in site.data.nav %}
+            <li class="menus_item"><a class="site-page" href="{{ item.href }}">{{ item.label }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+</header>

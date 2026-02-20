@@ -1,0 +1,28 @@
+name: "Gregory Scott Chirikjian"
+title: "LAB DIRECTOR"
+avatar: "/images/People/chirikjian_head.jpg"
+avatar_fallback: "/img/profile.png"
+
+social_icons:
+  - icon_class: "fab fa-github"
+    url: "https://github.com/ChirikjianLab"
+    target: "_blank"
+    title: ""
+  - icon_class: "fab fa-linkedin"
+    url: "https://sg.linkedin.com/in/gregory-chirikjian-9445a247"
+    target: "_blank"
+    title: ""
+  - icon_class: "fas fa-envelope"
+    url: "mailto:gchirik@udel.edu"
+    target: "_blank"
+    title: "UDel"
+  - icon_class: "fas fa-envelope"
+    url: "mailto:Gregory.Chirikjian@mbzuai.ac.ae"
+    target: "_blank"
+    title: "MBZUAI"
+
+social_links:
+  - icon_class: "fas fa-graduation-cap"
+    url: "https://scholar.google.com/citations?user=qoIuyMoAAAAJ&hl=en"
+    target: "_blank"
+    label: "Google Scholar"

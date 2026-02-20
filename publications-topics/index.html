@@ -1,134 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: default
+title: "Publications by Research Topic"
+---
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-    <title>Publications by Research Topic - Robot and Protein Kinematics Laboratory</title>
-    <meta name="author" content="Gregory Scott Chirikjian">
-    <link rel="shortcut icon" href="/img/favicon.png">
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css">
-    <meta name="generator" content="Hexo 6.1.0">
-</head>
+<h2 class="page-title">Publications by Research Topic</h2>
+<article>
+    <h1 id="Research-topics">
+        <a href="#Research-topics" class="headerlink" title="Research Topics"></a>
+        <!-- Research Topics -->
+    </h1>
 
-<body>
-    <header id="page_header">
-        <div class="header_wrap">
-            <div id="blog_name">
-                <a class="blog_title" id="site-name" href="/">Robot and Protein Kinematics Laboratory</a>
-            </div>
-            <button class="menus_icon">
-                <div class="navicon"></div>
-            </button>
-            <ul class="menus_items">
-                <li class="menus_item"><a class="site-page" href="/"> Home</a></li>
-                <li class="menus_item"><a class="site-page" href="/research"> Research</a></li>
-                <li class="menus_item"><a class="site-page" href="/publications"> Publications</a></li>
-                <li class="menus_item"><a class="site-page" href="/publications-topics/"> Publications by Topic</a></li>
-                <li class="menus_item"><a class="site-page" href="/people"> People</a></li>
-                <li class="menus_item"><a class="site-page" href="/lab-news"> Lab News</a></li>
-                <li class="menus_item"><a class="site-page" href="/contact-us"> Contact Us</a></li>
-            </ul>
-        </div>
-    </header>
+    <!-- Research Topics (TOC) -->
+    <section class="toc" id="research-topics">
+    <div class="toc-header">
+        <h3>Research Topics</h3>
+        <button class="toc-toggle" type="button" aria-expanded="true" aria-controls="toc-grid">
+        Hide
+        </button>
+    </div>
+    <div class="toc-grid" id="toc-grid">
+        {% for topic in site.data.research_topics %}
+        <a class="toc-chip" href="#{{ topic.slug }}">{{ topic.label }}</a>
+        {% endfor %}
+    </div>
+    </section>
 
-    <main id="page_main">
-        <div class="side-card sticky">
-            <div class="card-wrap" itemscope itemtype="http://schema.org/Person">
-                <div class="author-avatar">
-                    <img class="avatar-img" 
-                         src="/images/People/chirikjian_head.jpg" 
-                         onerror="this.onerror=null;this.src='/img/profile.png'" 
-                         alt="avatar">
-                </div>
-                <div class="author-discrip">
-                    <h3>Gregory Scott Chirikjian</h3>
-                    <p class="author-bio">LAB DIRECTOR</p>
-                </div>
-                <div class="author-links">
-                    <button class="btn m-social-links">Links</button>
-                    <ul class="social-icons">
-                        <li>
-                            <a class="social-icon" href="https://github.com/ChirikjianLab" target="_blank">
-                                <i class="fab fa-github" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="social-icon" 
-                               href="https://sg.linkedin.com/in/gregory-chirikjian-9445a247" 
-                               target="_blank">
-                                <i class="fab fa-linkedin" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="social-icon" href="mailto:gchirik@udel.edu" target="_blank" title="UDel">
-                                <i class="fas fa-envelope" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="social-icon" href="mailto:Gregory.Chirikjian@mbzuai.ac.ae" target="_blank" title="MBZUAI">
-                                <i class="fas fa-envelope" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="social-links">
-                        <li>
-                            <a class="e-social-link" 
-                               href="https://scholar.google.com/citations?user=qoIuyMoAAAAJ&hl=en" 
-                               target="_blank">
-                                <i class="fas fa-graduation-cap" aria-hidden="true"></i>
-                                <span>Google Scholar</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+    <hr>
 
-        <div class="page" itemscope itemtype="http://schema.org/CreativeWork">
-            <h1 class="page-title">Publications by Research Topic</h1>
-            <article>
-
-                <!-- Research Topics (TOC) -->
-                <section class="toc" id="research-topics">
-                <div class="toc-header">
-                    <h2>Research Topics</h2>
-
-                    <!-- 移动端折叠按钮（桌面端会自动隐藏） -->
-                    <button class="toc-toggle" type="button" aria-expanded="true" aria-controls="toc-grid">
-                    Hide
-                    </button>
-                </div>
-
-                <div class="toc-grid" id="toc-grid">
-                    <a class="toc-chip" href="#Robot-Imagination">Robot Imagination</a>
-                    <a class="toc-chip" href="#Robotic-Repair">Robotic Repair</a>
-                    <a class="toc-chip" href="#Robot-Action-Recognition">Robot Action Recognition</a>
-                    <a class="toc-chip" href="#Malaria-Vaccine-Manufacturing-Automation">Malaria Vaccine Manufacturing Automation</a>
-                    <a class="toc-chip" href="#Polymer-Science">Polymer Science</a>
-                    <a class="toc-chip" href="#Robotic-Self-Replication">Robotic Self-Replication</a>
-                    <a class="toc-chip" href="#DNA-Mechanics-and-Conformation">DNA Mechanics and Conformation</a>
-                    <a class="toc-chip" href="#Structural-Bioinformatics">Structural Bioinformatics</a>
-                    <a class="toc-chip" href="#Protein-Kinematics">Protein Kinematics</a>
-                    <a class="toc-chip" href="#Image-Analysis">Image Analysis</a>
-                    <a class="toc-chip" href="#Robot-Motion-Planning">Robot Motion Planning</a>
-                    <a class="toc-chip" href="#Nano-Science">Nano Science</a>
-                    <a class="toc-chip" href="#Applied-Mathematics">Applied Mathematics</a>
-                    <a class="toc-chip" href="#Medical-Applications">Medical Applications</a>
-                    <a class="toc-chip" href="#Library-Robots">Library Robots</a>
-                    <a class="toc-chip" href="#Metamorphic-Robots">Metamorphic Robots</a>
-                    <a class="toc-chip" href="#Theoretical-Kinematics-and-CAD">Theoretical Kinematics and CAD</a>
-                    <a class="toc-chip" href="#Hyper-Redundant-Robots">Hyper-Redundant Robots</a>
-                    <a class="toc-chip" href="#Binary-Manipulators">Binary Manipulators</a>
-                    <a class="toc-chip" href="#Spherical-Stepper-Motor">Spherical Stepper Motor</a>
-                    <a class="toc-chip" href="#Error-Propagation-and-Bayesian-Fusion">Error Propagation and Bayesian Fusion</a>
-                    <a class="toc-chip" href="#Mathematical-Crystallography">Mathematical Crystallography</a>
-                    <a class="toc-chip" href="#Electron-Microscopy">Electron Microscopy</a>
-                    <a class="toc-chip" href="#Sensor-Calibration">Sensor Calibration</a>
-                </div>
-                </section>
+<!-- Research Topics (TOC) -->
                 <hr>
 
                 <details class="table-of-contents">
@@ -887,87 +786,21 @@
                     </strong>
                 </p>
 
-            </article>
-        </div>
-    </main>
-
-    <div class="nav-wrap">
-        <div class="nav">
-            <button class="site-nav">
-                <div class="navicon"></div>
-            </button>
-            <ul class="nav_items">
-                <li class="nav_item"><a class="nav-page" href="/"> Home</a></li>
-                <li class="nav_item"><a class="nav-page" href="/research"> Research</a></li>
-                <li class="nav_item"><a class="nav-page" href="/publications"> Publications</a></li>
-                <li class="nav_item"><a class="nav-page" href="/publications-topics/"> Publications by Topic</a></li>
-                <li class="nav_item"><a class="nav-page" href="/people"> People</a></li>
-                <li class="nav_item"><a class="nav-page" href="/lab-news"> Lab News</a></li>
-                <li class="nav_item"><a class="nav-page" href="/contact-us"> Contact Us</a></li>
-            </ul>
-        </div>
-        <div class="cd-top">
-            <i class="fa fa-arrow-up" aria-hidden="true"></i>
-        </div>
-    </div>
-
-    <footer id="page_footer">
-        <div class="footer_wrap">
-            <div class="copyright">&copy;2020 - 2022 by Gregory Scott Chirikjian</div>
-            <div class="theme-info">
-                Powered by <a target="_blank" href="https://hexo.io" rel="nofollow noopener">Hexo</a> & 
-                <a target="_blank" 
-                   href="https://github.com/PhosphorW/hexo-theme-academia" 
-                   rel="nofollow noopener">
-                    Academia Theme
-                </a>
-            </div>
-        </div>
-    </footer>
-
-    <!-- // core scripts -->
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script>
-    <script src="/js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script>
-
-    <script> // research topics button
+    <script>
     document.addEventListener('DOMContentLoaded', function () {
-    const btn = document.querySelector('.toc-toggle');
-    const grid = document.getElementById('toc-grid');
-    if (!btn || !grid) return;
-
-    btn.textContent = 'Hide';
-    btn.setAttribute('aria-expanded', 'true');
-
-    btn.addEventListener('click', function (e) {
-        e.preventDefault();
-        e.stopPropagation();
-
-        const collapsed = grid.classList.toggle('is-collapsed');
-        btn.setAttribute('aria-expanded', String(!collapsed));
-        btn.textContent = collapsed ? 'Show' : 'Hide';
-    });
-    });
-    </script>
-
-    <script> // pop up window
-        window.addEventListener('load', function() {
-            var acknowledged = sessionStorage.getItem('publicationsAcknowledged');
-            
-            if (!acknowledged) {
-                var userConfirmed = confirm('Acknowledgement\n\nBy clicking "OK", I acknowledge that the contents (papers, articles, slides, etc) on this page are only allowed for personal use and prohibited from dissemination purposes.');
-                
-                if (userConfirmed) {
-                    sessionStorage.setItem('publicationsAcknowledged', 'true');
-                } else {
-                    // Redirect to home page if user clicks Cancel
-                    window.location.href = '/';
-                }
-            }
+        const btn = document.querySelector('.toc-toggle');
+        const grid = document.getElementById('toc-grid');
+        if (!btn || !grid) return;
+        btn.textContent = 'Hide';
+        btn.setAttribute('aria-expanded', 'true');
+        btn.addEventListener('click', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            const collapsed = grid.classList.toggle('is-collapsed');
+            btn.setAttribute('aria-expanded', String(!collapsed));
+            btn.textContent = collapsed ? 'Show' : 'Hide';
         });
+    });
     </script>
 
-</body>
-
-</html>
+</article>

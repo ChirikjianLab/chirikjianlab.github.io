@@ -1,0 +1,37 @@
+{% assign a = site.data.author %}
+<div class="side-card sticky">
+    <div class="card-wrap" itemscope itemtype="http://schema.org/Person">
+        <div class="author-avatar">
+            <img class="avatar-img"
+                 src="{{ a.avatar }}"
+                 onerror="this.onerror=null;this.src='{{ a.avatar_fallback }}'"
+                 alt="avatar">
+        </div>
+        <div class="author-discrip">
+            <h3>{{ a.name }}</h3>
+            <p class="author-bio">{{ a.title }}</p>
+        </div>
+        <div class="author-links">
+            <button class="btn m-social-links">Links</button>
+            <ul class="social-icons">
+                {% for link in a.social_icons %}
+                <li>
+                    <a class="social-icon" href="{{ link.url }}" target="{{ link.target }}"{% if link.title != "" %} title="{{ link.title }}"{% endif %}>
+                        <i class="{{ link.icon_class }}" aria-hidden="true"></i>
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+            <ul class="social-links">
+                {% for link in a.social_links %}
+                <li>
+                    <a class="e-social-link" href="{{ link.url }}" target="{{ link.target }}">
+                        <i class="{{ link.icon_class }}" aria-hidden="true"></i>
+                        <span>{{ link.label }}</span>
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>

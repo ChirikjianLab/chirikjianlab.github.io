@@ -1,0 +1,23 @@
+title: "Robot and Protein Kinematics Laboratory"
+url: "https://chirikjianlab.github.io"
+baseurl: ""
+author: "Gregory Scott Chirikjian"
+description: "RPK Laboratory — Robot and Protein Kinematics"
+favicon: "/img/favicon.png"
+copyright_years: "2020 - 2022"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+plugins: []
+
+exclude:
+  - "*.md"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - ".vscode/"
+  - "vendor/"
+  - "vendor/bundle/"
+

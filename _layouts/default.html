@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+    {% include header.html %}
+
+    <main id="page_main">
+        {% include sidebar.html %}
+
+        <div class="page" itemscope itemtype="http://schema.org/CreativeWork">
+            {{ content }}
+        </div>
+    </main>
+
+    {% include mobile-nav.html %}
+    {% include footer.html %}
+    {% include scripts.html %}
+</body>
+
+</html>
